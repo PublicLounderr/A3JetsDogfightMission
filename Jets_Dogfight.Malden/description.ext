@@ -1,0 +1,101 @@
+respawnTemplatesVirtual[] = {};
+
+class CfgFunctions 
+{
+	#include "Functions\functions.hpp"
+
+	class TDM
+	{
+		class FactionDetection
+		{
+			class SideFactions {file = "TDM_fnc_SideFactions.sqf";};
+		};
+	};
+};
+
+class RscTitles
+{
+	#include "Score_Bar\Score_Bar_HPP.hpp"
+};
+
+showHUD[] = {
+	1,	// Scripted HUD (same as showHUD command)
+	1,	// Vehicle and unit info
+	1,	// Vehicle radar
+	1,	// Vehicle compass
+	1,	// Tank direction indicator
+	1,	// Commanding menu
+	1,	// Group info bar
+	1,	// HUD weapon cursors
+	1,	// Vehicle display panels
+	0,	// "x killed by y" messages
+	1	// Force show drawIcon3D icons
+};
+
+class CfgDebriefing
+{  
+	class WIN
+	{
+		title = "Victory";
+		subtitle = "Your team won!";
+		description = "Score limit reached!";
+		picture = "Score_Bar\images\win_ca.paa";
+	};
+	class LOSE
+	{
+		title = "Defeat";
+		subtitle = "Your team lost!";
+		description = "Score limit reached!";
+		picture = "Score_Bar\images\lose_ca.paa";
+	};
+	class TIE
+	{
+		title = "Draw";
+		subtitle = "It's a draw!";
+		description = "Return to base!";
+		picture = "Score_Bar\images\draw_ca.paa";
+	};
+	class WINTIME
+	{
+		title = "Victory";
+		subtitle = "Your team won!";
+		description = "Time limit reached!";
+		picture = "Score_Bar\images\time_ca.paa";
+	};
+	class LOSETIME
+	{
+		title = "Defeat";
+		subtitle = "Your team lost!";
+		description = "Time limit reached!";
+		picture = "Score_Bar\images\time_ca.paa";
+	};
+	class TIETIME
+	{
+		title = "Draw";
+		subtitle = "It's a draw!";
+		description = "Time limit reached!";
+		picture = "Score_Bar\images\time_ca.paa";
+	};
+};
+
+// class CfgMusic
+// {
+// 	class EndWin
+// 	{
+// 		name = "EndWin";
+// 		sound[] = {"Score_Bar\music\EndWin.ogg", db+10, 1.0};
+// 		duration = 14.16;
+// 	};
+// 	class EndLose
+// 	{
+// 		name = "EndLose";
+// 		sound[] = {"Score_Bar\music\EndLose.ogg", db+10, 1.0};
+// 		duration = 13.84;
+// 	};
+// 	class EndDraw
+// 	{
+// 		name = "EndDraw";
+// 		sound[] = {"Score_Bar\music\EndDraw.ogg", db+10, 1.0};
+// 		duration = 16;
+// 	};
+// };
